@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:p="http://www.springframework.org/schema/p"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean name="userDao" class="com.itheima.spring.demo1.UserDaoImpl">
+    	<property name="name" value="zhangsan"></property>
+    </bean>
+    
+    <bean name="customerDao" class="com.itheima.spring.demo2.CustomerDaoImpl" scope="prototype" init-method="setup" destroy-method="destroy"></bean>
+    
+    <!-- <bean id="bean1" class="com.itheima.spring.demo3.Bean1"></bean>
+    
+    <bean id="bean2" class="com.itheima.spring.demo3.Bean2Factory" factory-method="createBean2"></bean>
+   
+    <bean id="bean3Factory" class="com.itheima.spring.demo3.Bean3Factory"></bean>
+    <bean id="bean3" factory-bean="bean3Factory" factory-method="createBean3"></bean> -->
+    
+    <bean id="car" class="com.itheima.spring.demo4.Car">
+    	<constructor-arg name="name" value="奔驰"></constructor-arg>
+    	<constructor-arg name="price" value="500000.0"></constructor-arg>
+    </bean>
+    
+   <!--  <bean id="car2" class="com.itheima.spring.demo4.Car2">
+    	<property name="name" value="大众"></property>
+    	<property name="price" value="300000.0"></property>
+    </bean>
+    
+    <bean id="employee" class="com.itheima.spring.demo4.Employee">
+    	<property name="name" value="张三"></property>
+    	<property name="car2" ref="car2"></property>
+    
+    </bean> -->
+    
+    <bean id="car2" class="com.itheima.spring.demo4.Car2" p:name="东风" p:price="700000.0"></bean>
+    <bean id="employee" class="com.itheima.spring.demo4.Employee" p:name="张三" p:car2-ref="car2"></bean>
+    
+    <import resource="applicationContext2.xml"/>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</beans>
