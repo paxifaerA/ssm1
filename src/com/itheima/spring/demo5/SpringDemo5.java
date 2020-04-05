@@ -12,7 +12,8 @@ public class SpringDemo5 {
 		System.out.println(collectionBean);
 		
 		System.out.println("1111111111111");
-		
 		System.out.println("2222222222222");
+		System.out.println("333");
+		System.out.println("444");
 	}
 }
