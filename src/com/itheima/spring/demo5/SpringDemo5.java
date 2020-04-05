@@ -14,6 +14,10 @@ public class SpringDemo5 {
 		System.out.println("1111111111111");
 		System.out.println("2222222222222");
 		System.out.println("333");
+<<<<<<< HEAD
 		System.out.println("555");
+=======
+		System.out.println("444");
+>>>>>>> branch 'master' of https://github.com/paxifaerA/ssm1.git
 	}
 }
