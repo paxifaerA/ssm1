@@ -17,7 +17,6 @@ public class SpringDemo5 {
 <<<<<<< HEAD
 		System.out.println("555");
 =======
-		System.out.println("444");
 >>>>>>> branch 'master' of https://github.com/paxifaerA/ssm1.git
 	}
 }
