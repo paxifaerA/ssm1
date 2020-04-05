@@ -10,5 +10,7 @@ public class SpringDemo5 {
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
 		CollectionBean collectionBean = (CollectionBean) applicationContext.getBean("collectionBean");
 		System.out.println(collectionBean);
+		
+		System.out.println("1111111111111");
 	}
 }
